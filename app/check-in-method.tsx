@@ -44,12 +44,18 @@ export default function CheckInMethodScreen() {
                 >
                     {/* Icône code */}
                     <View className="mb-6">
-                        <View className={`w-14 h-14 rounded-full items-center justify-center ${pressedButton === 'code' ? 'bg-white' : 'bg-[#4169E1]'
-                            }`}>
-                            <Text className={`text-xl font-bold ${pressedButton === 'code' ? 'text-[#4169E1]' : 'text-white'
-                                }`}>
-                                123
-                            </Text>
+                        <View className={`w-14 h-14 rounded-full items-center justify-center border-2 border-white ${pressedButton === 'code' ? 'bg-white' : 'bg-[#4169E1]'}`}>
+
+                            <Image
+                                source={require('../assets/images/code-icon.png')}
+                                style={{
+                                    width: 50,
+                                    height: 50,
+                                    tintColor: pressedButton === 'code' ? '#4169E1' : 'white'
+                                }}
+                                resizeMode="contain"
+                            />
+
                         </View>
                     </View>
 
@@ -76,12 +82,17 @@ export default function CheckInMethodScreen() {
                 >
                     {/* Icône recherche */}
                     <View className="mb-6">
-                        <View className={`w-14 h-14 rounded-full items-center justify-center ${pressedButton === 'search' ? 'bg-white' : 'bg-[#4169E1]'
-                            }`}>
-                            <Text className={`text-xl ${pressedButton === 'search' ? 'text-[#4169E1]' : 'text-white'
-                                }`}>
-                                👤
-                            </Text>
+                        <View className={`w-14 h-14 rounded-full items-center justify-center border-2 border-white ${pressedButton === 'search' ? 'bg-white' : 'bg-[#4169E1]'}`}>
+
+                            <Image
+                                source={require('../assets/images/person-icon.png')}
+                                style={{
+                                    width: 50,
+                                    height: 50,
+                                    tintColor: pressedButton === 'search' ? '#4169E1' : 'white'
+                                }}
+                                resizeMode="contain"
+                            />
                         </View>
                     </View>
 
